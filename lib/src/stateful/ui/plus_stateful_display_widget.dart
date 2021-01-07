@@ -19,13 +19,26 @@ class _PlusStatefulDisplayWidgetState extends State<PlusStatefulDisplayWidget> {
         title: Text("기본 Stateful"),
       ),
       body: CountViewStateless(count: count),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {
-          setState(() {
-            count++;
-          });
-        },
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {
+              setState(() {
+                count++;
+              });
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.remove),
+            onPressed: () {
+              setState(() {
+                count--;
+              });
+            },
+          ),
+        ],
       ),
     );
   }

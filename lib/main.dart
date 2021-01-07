@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_sample/src/bloc_pattern/bloc/count_bloc.dart';
 import 'package:flutter_bloc_sample/src/bloc_pattern/ui/bloc_display_widget.dart';
 import 'package:flutter_bloc_sample/src/stateful/ui/plus_stateful_display_widget.dart';
 
 void main() {
   runApp(MyApp());
 }
+
+final countBloc = CountBloc();
 
 class MyApp extends StatelessWidget {
   @override

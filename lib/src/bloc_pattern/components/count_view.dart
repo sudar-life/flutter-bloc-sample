@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_sample/src/bloc_pattern/bloc/count_bloc.dart';
+
+import '../../../main.dart';
 
 class CountView extends StatelessWidget {
-  CountBloc countBloc;
-  CountView({Key key, this.countBloc}) : super(key: key);
+  CountView({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
