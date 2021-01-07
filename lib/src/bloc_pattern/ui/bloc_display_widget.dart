@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_sample/src/bloc/count_bloc.dart';
-import 'package:flutter_bloc_sample/src/ui/count_view.dart';
+import 'package:flutter_bloc_sample/src/bloc_pattern/bloc/count_bloc.dart';
+import 'package:flutter_bloc_sample/src/bloc_pattern/components/count_view.dart';
 
 class BlocDisplayWidget extends StatefulWidget {
   BlocDisplayWidget({Key key}) : super(key: key);
