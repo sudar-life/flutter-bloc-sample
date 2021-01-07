@@ -10,6 +10,11 @@ class CountBloc {
     _countSubject.sink.add(_count);
   }
 
+  subtract() {
+    _count--;
+    _countSubject.sink.add(_count);
+  }
+
   dispose() {
     _countSubject.close();
   }
