@@ -7,6 +7,10 @@ class CountViewStateless extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print("CountViewStateless Build !!");
-    return Center(child: Text(count.toString()));
+    return Center(
+        child: Text(
+      count.toString(),
+      style: TextStyle(fontSize: 80),
+    ));
   }
 }

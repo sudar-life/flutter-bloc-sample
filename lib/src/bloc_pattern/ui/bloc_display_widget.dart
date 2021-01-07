@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc_sample/src/bloc_pattern/bloc/count_bloc.dart';
 import 'package:flutter_bloc_sample/src/bloc_pattern/components/count_view.dart';
 
-import '../../../main.dart';
+CountBloc countBloc;
 
 class BlocDisplayWidget extends StatefulWidget {
   BlocDisplayWidget({Key key}) : super(key: key);
@@ -12,6 +12,18 @@ class BlocDisplayWidget extends StatefulWidget {
 }
 
 class _BlocDisplayWidgetState extends State<BlocDisplayWidget> {
+  @override
+  void initState() {
+    super.initState();
+    countBloc = CountBloc();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    countBloc.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

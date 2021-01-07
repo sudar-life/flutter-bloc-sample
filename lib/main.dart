@@ -7,8 +7,6 @@ void main() {
   runApp(MyApp());
 }
 
-final CountBloc countBloc = CountBloc();
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
