@@ -37,8 +37,11 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Center(
-              child: FlatButton(
-                color: Colors.grey[400],
+              child: ElevatedButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.grey[400],
+                ),
                 child: Text("bloc 패턴"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (_) {
@@ -48,8 +51,11 @@ class _HomeState extends State<Home> {
               ),
             ),
             Center(
-              child: FlatButton(
-                color: Colors.grey[400],
+              child: ElevatedButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.grey[400],
+                ),
                 child: Text("기본 stateful"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (_) {
